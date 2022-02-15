@@ -16,7 +16,7 @@ function resize_home(){
     $("#route").css("height",route_height);
     $("#list").css("height",menu_height);
     $("#menu").css("height",menu_height);
-    // $("#list").css("height",menu_height);
+
 }
 
 $(function() {
