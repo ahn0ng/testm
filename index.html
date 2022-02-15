@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1.0, width=device-width" />
+    <meta name="HandheldFriendly" content="true" />
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/route.css" rel="stylesheet" type="text/css">
+    <link href="css/menu.css" rel="stylesheet" type="text/css">
+    <link href="css/list.css" rel="stylesheet" type="text/css">
+    <title>Lead Me Mobile</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" type="text/javascript" text="javascript"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.8.23/jquery-ui.min.js"></script>
+    <script src="js/mobile.js" type="text/javascript" text="javascript"></script>
+    
+</head>
+<body>
+    <div id="warp">
+        <!-- 헤더(서치바) -->
+        <header>
+            <input type="search" id="search_place" placeholder="Test_39" />
+            <!-- <img id="search_icon" src="https://img.icons8.com/external-dreamstale-lineal-dreamstale/16/000000/external-search-ui-dreamstale-lineal-dreamstale.png"/> -->
+        </header>
+
+        <div id="all_wrap">
+            <!-- 최적화 루트 -->
+            <section id="route">
+                <div class="drag_bar"><span></span></div>
+                <article id="route_wrap">
+
+                    <div class="user_name">
+                        <h4>김기찬 기사님</h4>
+                    </div>
+
+                    <div id="start">
+                        <div class="title"><h3>출발지</h3></div>
+                        <input type="search" class="place_input" id="departure" placeholder="주소"/>
+                        <select class="select_time">
+                            <option value="">현재 시각 사용</option>
+                            <option value="AM">오전</option>
+                            <option value="PM">오후</option>
+                        </select>
+                    </div>
+
+                    <div id="place">
+                        <div class="title">
+                            <h3 id="place_title">경유지</h3>
+                            <span id="switch_btn">
+                                <img src="https://img.icons8.com/material-two-tone/24/000000/change--v1.png"/>
+                            </span>
+                        </div>
+                        <div id="place_list">
+                            <div id="place_1" class="place_1">
+                                <div class="num_box"><h4>1</h4></div>
+                                <div class="address_box">
+                                    <p>0000 Leadme Street San Jose, CA</p>
+                                    <span>무인 택배함에 보관</span>
+                                    <h5 class="eta"><span>9:00</span>&nbsp도착</h5>
+                                </div>
+                                <div class="place_menu">
+                                    <div>수정</div>
+                                    <div>즐겨찾기 추가</div>
+                                    <div>삭제</div>
+                                </div>
+                            </div>
+                            <div id="place_1" class="place_1">
+                                <div class="num_box"><h4>2</h4></div>
+                                <div class="address_box">
+                                    <p>2017 Ninth Street, Berkeley, CA</p>
+                                    <span>배송 후 문자 보내기</span>
+                                    <h5 class="eta"><span>3:00</span>&nbsp도착</h5>
+                                </div>
+                                <div class="place_menu">
+                                    <div>수정</div>
+                                    <div>즐겨찾기 추가</div>
+                                    <div>삭제</div>
+                                </div>
+                            </div>
+                            <div id="place_1" class="place_1">
+                                <div class="num_box"><h4>3</h4></div>
+                                <div class="address_box">
+                                    <p>0000 Toohard Avenue, Berkeley</p>
+                                    <span>9:00 AM 까지 배송</span>
+                                    <h5 class="eta"><span>9:00</span>&nbsp도착</h5>
+                                </div>
+                                <div class="place_menu">
+                                    <div>수정</div>
+                                    <div>즐겨찾기 추가</div>
+                                    <div>삭제</div>
+                                </div>
+                            </div>
+                            <div id="add_btn"><span>+</span></div>
+                        </div>
+                    </div>
+                    
+                    <div id="finish">
+                        <div class="title"><h3>도착지</h3></div>
+                        <select class="select_arrive">
+                            <option value="">기존 설정</option>
+                            <option value="">출발지와 동일</option>
+                            <option value="">마지막 경유지</option>
+                            <option value="typing">직접 입력</option>
+                        </select>
+                        <input type="search" class="place_input" id="arrive" placeholder="주소"/>
+                        
+                    </div>
+                    
+                    <div id="route_btn">
+                        <img src="https://img.icons8.com/material-outlined/18/FFFFFF/circular-arrows--v2.png"/>
+                    </div>
+                </article>
+            </section>
+            <!-- 최적화 루트 -->
+
+            <!-- 리스트 -->
+            <section id="list"> 
+                <!-- <div id="list_wrap"> -->
+
+                    <!-- 등록된 경로 리스트, 즐겨찾기, 히스토리 -->
+                    <div class="list_title">
+                        <h3>등록된 경로 리스트</h3>
+                    </div>
+                    <div id="register_list">
+                        <!-- 초기 리스트 -->
+                        <div class="list_box_first">
+                            <div class="register_content">
+                                <div class="content_info">
+                                    <h4>정기적인 순찰 리스트</h4>
+                                    <p>메모메모메모</p>
+                                    <span>2022.02.02</span>
+                                </div>
+                                <div class="detail_info">
+                                    <div>최적화</div>
+                                    <div>수정</div>
+                                    <div>삭제</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 추가 메뉴 -->
+                        <input type="checkbox" id="menuBtn">
+                        <div class="list_box">
+                            <div class="register_content">
+                                <div class="content_info">
+                                    <h4>산타클라라 지역 배송</h4>
+                                    <p>10개의 경유지</p>
+                                    <span>2022.02.02</span>
+                                </div>
+                                <div class="detail_info">
+                                    <div>최적화</div>
+                                    <div>수정</div>
+                                    <div>삭제</div>
+                                </div>
+                            </div>
+                            <div class="register_content">
+                                <div class="content_info">
+                                    <h4>오늘 배송 리스트</h4>
+                                    <p>SantaClara to Berkeley with 3 stop</p>
+                                    <span>2022.02.02</span>
+                                </div>
+                                <div class="detail_info">
+                                    <div>최적화</div>
+                                    <div>수정</div>
+                                    <div>삭제</div>
+                                </div>
+                            </div>
+                            <div class="register_content">
+                                <div class="content_info">
+                                    <h4>정기적인 순찰 리스트</h4>
+                                    <p>메모를 길게 쓰다보면 이게 넘어가게 됩니다 그냥 길게 말고 짧게 써주지 ㅠ</p>
+                                    <span>2022.02.02</span>
+                                </div>
+                                <div class="detail_info">
+                                    <div>최적화</div>
+                                    <div>수정</div>
+                                    <div>삭제</div>
+                                </div>
+                            </div>
+                        </div>
+                        <label for="menuBtn" class="test_btn" onclick=""></label>
+                    </div>
+                    <!-- 등록된 경로 리스트, 즐겨찾기, 히스토리 -->
+
+                    <!-- 즐겨찾기 -->
+                    <div class="list_title">
+                        <h3>즐겨찾기</h3>
+                    </div>
+                    <div id="bookmark_list">
+                        <!-- 초기 리스트 -->
+                        <div class="bookmark_box_first">
+                            <div class="bookmark_content">
+                                <h4>집</h4>
+                                <p>Santa Clara, CA</p>
+                                <div class="detail_info2">
+                                    <div>추가</div>
+                                    <div>삭제</div>
+                                </div>
+                            </div>
+                        
+                            <div class="bookmark_content">
+                                <h4>회사</h4>
+                                <p>San Jose, CA</p>
+                                <div class="detail_info2">
+                                    <div>추가</div>
+                                    <div>삭제</div>
+                                </div>
+                            </div>
+                            <div class="bookmark_content">
+                                <h4>주유소</h4>
+                                <p>Berkeley, CA</p>
+                                <div class="detail_info2">
+                                    <div>추가</div>
+                                    <div>삭제</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 추가메뉴 -->
+                        <div id="bookmark_menu">
+                            <input type="checkbox" id="menuBtn2">
+                            <div class="bookmark_box">
+                                <div class="bookmark_content">
+                                    <h4>순대국집</h4>
+                                    <p>Santa Clara, CA</p>
+                                    <div class="detail_info2">
+                                        <div>추가</div>
+                                        <div>삭제</div>
+                                    </div>
+                                </div>
+                                <div class="bookmark_content">
+                                    <h4>우리집 이름은 엄청 길어요</h4>
+                                    <p>Santa Clara, CA</p>
+                                    <div class="detail_info2">
+                                        <div>추가</div>
+                                        <div>삭제</div>
+                                    </div>
+                                </div>
+                                <div class="bookmark_content">
+                                    <h4>이름이 길다 길다</h4>
+                                    <p>Santa Clara, CA</p>
+                                    <div class="detail_info2">
+                                        <div>추가</div>
+                                        <div>삭제</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <label for="menuBtn2" class="test_btn2" onclick=""></label>
+                        </div>
+                    
+                    
+                    </div>
+                    <!-- 즐겨찾기 -->
+
+                    <!-- 히스토리 -->
+                    <div class="list_title">
+                        <h3>히스토리</h3>
+                    </div>
+                    <div id="history_list">
+                        <!-- 초기 리스트 -->
+                        <div class="list_box_first">
+                            <div class="register_content">
+                                <div class="content_info">
+                                    <h4>2022.01.31</h4>
+                                    <p>SantaClara to Berkeley with 3 stop</p>
+                                </div>
+                                <div class="detail_info">
+                                    <div>최적화</div>
+                                    <div>수정</div>
+                                    <div>삭제</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 추가메뉴 -->
+                        <input type="checkbox" id="menuBtn3">
+                        <div class="list_box">
+                            <div class="register_content">
+                                <div class="content_info">
+                                    <h4>2022.01.30</h4>
+                                    <p>SantaClara to Berkeley with 3 stop</p>
+                                </div>
+                                <div class="detail_info">
+                                    <div>최적화</div>
+                                    <div>수정</div>
+                                    <div>삭제</div>
+                                </div>
+                            </div>
+                            <div class="register_content">
+                                <div class="content_info">
+                                    <h4>2022.01.29</h4>
+                                    <p>SantaClara to Berkeley with 3 stop</p>
+                                </div>
+                                <div class="detail_info">
+                                    <div>최적화</div>
+                                    <div>수정</div>
+                                    <div>삭제</div>
+                                </div>
+                            </div>
+                            <div class="register_content">
+                                <div class="content_info">
+                                    <h4>2022.01.28</h4>
+                                    <p>SantaClara to Berkeley with 3 stop</p>
+                                </div>
+                                <div class="detail_info">
+                                    <div>최적화</div>
+                                    <div>수정</div>
+                                    <div>삭제</div>
+                                </div>
+                            </div>
+                        </div>
+                        <label for="menuBtn3" class="test_btn3" onclick=""></label>
+                    </div>
+                    <!-- 히스토리 -->
+                <!-- </div> -->
+            </section>
+            <!-- 리스트 -->
+
+            <!-- 유저 메뉴 -->
+            <section id="menu">
+                <!-- <div id="menu_wrap"> -->
+                    <div id="user_info">
+                        <h3>김기찬 기사님</h3>
+                    </div>
+                    <div id="menu_menu">
+                        <div>공지사항</div>
+                        <div>개인 정보 수정</div>
+                        <div>출발지 / 도착지 설정</div>
+                        <div>엑셀로 경로 추가</div>
+                        <div>설정</div>
+                        <div>고객센터</div>
+                    </div>
+                    <div id="menu_end">
+                        <div id="loginout_btn">로그아웃</div>
+                        <div id="end_btn">종료</div>
+                    </div>
+                <!-- </div> -->
+            </section>
+
+            <!-- 로그인 -->
+            <section id="login">
+                <div clsss="menu_header">
+                    <span id="back_btn">
+                        <img src="https://img.icons8.com/material-rounded/24/000000/delete-sign.png"/>
+                    </span>
+                </div>
+                    <div class="login-form">
+                        <h1>Lead Me</h1>
+                        <form method="post" action="/leadme/login/index.php">
+                            <input type="text" name="username" class="text-field" placeholder="이메일" value="" />
+                            <input type="password" name="password" class="text-field" placeholder="비밀번호" />
+                            <input type="submit" value="로그인" class="submit-btn" name="submit" />
+                        </form>
+                    
+                        <div class="links"> 
+                            <div id="register_btn">회원가입</div>
+                            <div id="password_btn">비밀번호 찾기</div>
+                    
+                        </div>
+                    </div>
+                
+            </section>
+
+            <!-- 회원가입 -->
+            <section id="register">
+                <div class="menu_header">
+                <span id="back_btn2">
+                    <img src="https://img.icons8.com/material-rounded/24/000000/delete-sign.png"/>
+                </span>
+                </div>
+                <div class="login-form">
+                    <h1>Lead Me</h1>
+                    <form>
+                    <input type="text" name="email" class="text-field" placeholder="이메일">
+                    <input type="password" name="password" class="text-field" placeholder="비밀번호">
+                    <input type="name" name="name" class="text-field" placeholder="이름">
+                    <input type="address" name="address" class="text-field" placeholder="주소">
+                    <input type="tel" name="phone" class="text-field" placeholder="번호">
+
+                    <div id="agree">
+                        <div id="agree_email">
+                            <input id="available1" name="available" type="checkbox" />
+                            <label class="checkbox_register" for="available1">
+                                <p>이메일 수신의 동의합니다</p>
+                            </label>
+                        </div>
+
+                        <div id="agree_info">
+                            <input id="available2" name="available" type="checkbox" />
+                            <label class="checkbox_register" for="available2">
+                                <p>이용약관과 개인정보취급방침에 동의합니다</p>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <input type="submit" value="회원가입" class="submit-btn2">
+                    <span>이미 가입 하셨다면<span id="login_pg"> 로그인</span> 하러가기</span>
+                    </form>
+                </div>
+
+                
+            </section>
+
+            <!-- 비밀번호 찾기 -->
+            <section id="password">
+                <span id="back_btn3">
+                    <img src="https://img.icons8.com/material-rounded/24/000000/delete-sign.png"/>
+                </span>
+                <div class="login-form">
+                    <h1>Lead Me</h1>
+                    <form>
+                        <input type="text" name="email" class="text-field" placeholder="이메일">
+                        <input type="submit" value="비밀번호 찾기" class="submit-btn3">
+                        <span><span id="login_pg2">로그인</span> 페이지로 돌아가기</span>
+                    </form>
+                
+                </div>
+            </section>
+
+
+            <!-- 엑셀 -->
+            <scetion>
+                
+            </scetion>
+        </div>
+
+
+        <!-- gnb -->
+        <nav>
+            <ul>
+                <li id="list_btn">
+                    <span id="list_icon"></span>
+                    <span class="nav_name">리스트</span>
+                </li>
+                <li id="home_btn">
+                    <span id="home_icon"></span>
+                    <span class="nav_name">홈</span>
+                </li>
+                <li id="menu_btn">
+                    <span id="menu_icon"></span>
+                    <span class="nav_name">메뉴</span>
+                </li>
+            </ul>
+        </nav>
+
+
+    </div>
+</body>
+</html>

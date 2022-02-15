@@ -1,0 +1,286 @@
+/* 메뉴 */
+
+#menu {
+  width: 100%;
+  height: 100%;
+  background-color: #eeeff1;
+  z-index: 9996;
+  position: relative;
+  /* position: absolute; */
+  display: none;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+/* #menu_wrap {
+  width: 95%;
+  height: calc(100% - 60px);
+  margin: 20px auto 30px auto;
+  position: relative;
+  overflow: scroll;
+  overflow-x: hidden;
+  top: 0;
+} */
+
+#user_info {
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  margin-top: 8%;
+  /* font-size: 3vw; */
+  font-size: 2vh;
+}
+
+#menu_menu {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#menu_menu div {
+  width: 80%;
+  /* height: 30px; */
+  background-color: #ddd;
+  margin: 4% auto 0 auto;
+  border-radius: 5px;
+  line-height: 30px;
+  cursor: pointer;
+  font-size: 1.5vh;
+}
+
+#menu_menu div:hover {
+  background-color: #71d4b0;
+  color: #eeeff1;
+}
+
+#menu_end {
+  width: 80%;
+  height: 30px;
+  margin: 4% auto 0 auto;
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+}
+#menu_end div {
+  width: 44%;
+  text-align: center;
+  line-height: 30px;
+  border: 1px solid #71d4b0;
+  border-radius: 5px;
+  font-size: 1.5vh;
+}
+
+#menu_end div:hover {
+  background-color: #71d4b0;
+  color: #fff;
+}
+
+/* 로그인 */
+
+.menu_header {
+  width: 100%;
+}
+#back_btn {
+  /* width: 100%; */
+  height: 20px;
+  float: right;
+  margin: 20px 20px 0 0;
+  cursor: pointer;
+  position: relative;
+}
+
+#login {
+  width: 100%;
+  /* height: calc(100% - 60px); */
+  height: 100%;
+  background-color: #eeeff1;
+  z-index: 9997;
+  position: relative;
+  display: none;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "NanumSquare", sans-serif;
+  border-radius: 5px;
+}
+
+.login-form {
+  width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 50px;
+  padding: 20px;
+  text-align: center;
+  border: none;
+  position: relative;
+  /* top: 50%;
+
+  transform: translate(0, -40%); */
+  z-index: 9998;
+  overflow-x: hidden;
+}
+
+.login-form h1 {
+  color: #71d4b0;
+}
+
+.login-form input:nth-child(1) {
+  margin-top: 20px;
+}
+
+.text-field {
+  /* font-size: 3vw; */
+  font-size: 1.5vh;
+  padding: 10px;
+  border: none;
+  width: 260px;
+  margin-bottom: 10px;
+}
+
+.submit-btn {
+  /* font-size: 4vw; */
+  font-size: 2vh;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  background-color: #71d4b0;
+  margin-bottom: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+.links {
+  text-align: center;
+  width: 100%;
+}
+
+.links div {
+  display: inline;
+  /* font-size: 3vw; */
+  font-size: 1.5vh;
+  color: #9b9b9b;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+/* 회원가입 */
+
+#back_btn2 {
+  float: right;
+  margin: 20px 20px 0 0;
+  cursor: pointer;
+}
+#register {
+  width: 100%;
+  height: 100%;
+  /* height: calc(100% - 60px); */
+  background-color: #eeeff1;
+  /* position: absolute; */
+  position: relative;
+  display: none;
+  z-index: 9998;
+  overflow-x: hidden;
+}
+
+/* .checkbox_register {
+  display: block;
+} */
+
+#login_pg {
+  color: #71d4b0;
+  cursor: pointer;
+}
+
+.submit-btn2 {
+  /* font-size: 4vw; */
+  font-size: 2vh;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  background-color: #71d4b0;
+  margin-bottom: 30px;
+  color: white;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+/* 체크박스 */
+
+#agree {
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#agree p {
+  display: inline;
+  padding-left: 20px;
+  white-space: pre-line;
+}
+#agree_email {
+  width: 100%;
+  margin-top: 5px;
+}
+#agree_info {
+  width: 100%;
+  margin-top: 10px;
+}
+
+input[id="available1"],
+input[id="available2"] {
+  display: none;
+}
+.checkbox_register {
+  height: 15px;
+  display: inline-block;
+  background: url("https://img.icons8.com/ios/50/2d2d2d/unchecked-checkbox.png")
+    no-repeat;
+  background-size: contain;
+}
+
+#available1:checked ~ .checkbox_register,
+#available2:checked ~ .checkbox_register {
+  background: url("https://img.icons8.com/ios/50/71d4b0/checked-checkbox--v1.png")
+    no-repeat;
+  background-size: contain;
+}
+
+/* 비밀번호 찾기 */
+
+#back_btn3 {
+  float: right;
+  margin: 20px 20px 0 0;
+  cursor: pointer;
+}
+
+#password {
+  width: 100%;
+  /* height: calc(100% - 60px); */
+  height: 100%;
+  background-color: #eeeff1;
+  z-index: 9998;
+  /* position: absolute; */
+  position: relative;
+  display: none;
+  overflow-x: hidden;
+}
+
+.submit-btn3 {
+  /* font-size: 4vw; */
+  font-size: 2vh;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  background-color: #71d4b0;
+  margin-bottom: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+#login_pg2 {
+  color: #71d4b0;
+  cursor: pointer;
+}

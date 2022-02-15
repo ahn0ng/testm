@@ -1,0 +1,282 @@
+/* 리스트 */
+
+#list {
+  width: 100%;
+  height: 100%;
+  background-color: #eeeff1;
+  z-index: 9996;
+  /* position: absolute; */
+  position: relative;
+  display: none;
+  overflow-x: hidden;
+  overflow: scroll;
+}
+
+/* #list_wrap {
+  width: 80%;
+  height: calc(100% - 60px);
+  height: 100%;
+  margin: 0 auto 30px auto;
+  position: relative;
+  overflow-x: hidden;
+  overflow: scroll;
+  top: 0;
+}  */
+
+.list_title {
+  width: 90%;
+  height: 20px;
+  line-height: 20px;
+  /* font-size: 3vw; */
+  font-size: 2vh;
+  /* margin-top: 20px;
+  margin-bottom: 10px; */
+  margin: 20px auto 10px auto;
+}
+
+/* 아코티언 */
+
+#menuBtn,
+#menuBtn2,
+#menuBtn3 {
+  display: none;
+}
+
+#menuBtn:checked ~ .list_box,
+#menuBtn3:checked ~ .list_box {
+  display: block;
+}
+
+#menuBtn2:checked ~ .bookmark_box {
+  display: flex;
+}
+
+#menuBtn:checked ~ .test_btn,
+#menuBtn2:checked ~ .test_btn2,
+#menuBtn3:checked ~ .test_btn3 {
+  background: url("https://img.icons8.com/external-those-icons-lineal-those-icons/12/000000/external-up-arrows-those-icons-lineal-those-icons.png")
+    no-repeat center;
+  background-size: contain;
+}
+
+.test_btn,
+.test_btn2,
+.test_btn3 {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background: url("https://img.icons8.com/external-those-icons-lineal-those-icons/12/000000/external-down-arrows-those-icons-lineal-those-icons-1.png")
+    no-repeat center;
+  background-size: contain;
+}
+
+/* 아코디언 */
+
+.list_box {
+  width: 90%;
+  margin: 0 auto;
+  display: none;
+  transition: 0.5s;
+}
+
+.list_box_first {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.bookmark_box_first {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.register_content {
+  width: 100%;
+  display: flex;
+  border: 1px solid #2d2d2d;
+  margin-bottom: 2%;
+  cursor: pointer;
+  flex-wrap: wrap;
+}
+
+.content_info {
+  width: 90%;
+}
+
+.content_info h4 {
+  width: 100%;
+  margin-top: 10px;
+  margin-left: 10px;
+  /* font-size: 3vw; */
+  font-size: 1.5vh;
+  margin-bottom: 5px;
+  font-weight: 900;
+
+  /* 추가적인 요소 */
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.content_info p {
+  width: 75%;
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  float: left;
+  /* font-size: 2vw; */
+  font-size: 1.5vh;
+
+  /* 추가적인 요소 */
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.content_info span {
+  width: 10%;
+  display: block;
+  float: right;
+  margin-top: 5px;
+  margin-right: 10px;
+  color: #9b9b9b;
+  /* font-size: 2vw; */
+  font-size: 1.3vh;
+}
+
+.register_content:hover > .detail_info {
+  display: flex;
+}
+
+.register_content:hover > .content_info h4,
+.register_content:hover > .content_info p {
+  white-space: pre-line;
+}
+
+.register_content:hover {
+  border: 1px solid #71d4b0;
+}
+
+.detail_info div:hover {
+  background-color: #71d4b0;
+  color: #fff;
+}
+
+.detail_info div:nth-child(3):hover {
+  background-color: red;
+  color: #fff;
+}
+
+.detail_info {
+  width: 100%;
+  display: none;
+  transition: 0.5s;
+  margin: 0 auto;
+}
+
+.detail_info div {
+  width: 31%;
+  height: 20px;
+  line-height: 20px;
+  background-color: #ddd;
+  margin: 0 0 10px 1.75%;
+  text-align: center;
+  /* font-size: 2vw; */
+  font-size: 1.3vh;
+}
+
+.bookmark_box {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  display: none;
+}
+
+.bookmark_box .bookmark_content {
+  margin-top: 3%;
+}
+
+.bookmark_content {
+  width: 30%;
+  height: 30%;
+  border: 1px solid #2d2d2d;
+  cursor: pointer;
+}
+
+.bookmark_content:hover {
+  border: 1px solid #71d4b0;
+}
+
+.bookmark_content h4 {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  /* font-size: 3vw; */
+  font-size: 1.5vh;
+  font-weight: 900;
+  border-radius: 0;
+
+  /* 추가적인 요소 */
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.bookmark_content p {
+  margin: 5px 10px 10px 10px;
+  /* font-size: 2vw; */
+  font-size: 1.2vh;
+  border-radius: 0;
+
+  /* 추가적인 요소 */
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.bookmark_content:hover > h4,
+.bookmark_content:hover > p {
+  white-space: pre-line;
+}
+
+.bookmark_content:hover > .detail_info2 {
+  display: flex;
+}
+
+.detail_info2 div:hover {
+  background-color: #71d4b0;
+  color: #fff;
+}
+
+.detail_info2 div:nth-child(2):hover {
+  background-color: red;
+  color: #fff;
+}
+
+.detail_info2 {
+  width: 100%;
+  display: none;
+  transition: 0.5s;
+  margin: 0 auto;
+}
+
+.detail_info2 div {
+  width: 44%;
+  height: 20px;
+  line-height: 20px;
+  background-color: #ddd;
+  margin: 0 0 10px 4%;
+  text-align: center;
+  /* font-size: 2vw; */
+  font-size: 1.3vh;
+}

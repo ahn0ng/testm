@@ -1,0 +1,257 @@
+/* 최적화 */
+
+#route {
+  width: 100%;
+  position: absolute;
+  z-index: 9996;
+  border-radius: 50px 50px 0 0;
+  background-color: #eeeff1;
+}
+
+.drag_bar {
+  width: 100%;
+  height: 30px;
+  cursor: move;
+  position: relative;
+}
+
+.drag_bar span {
+  width: 30px;
+  height: 3px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 200px;
+  background-color: #71d4b0;
+  display: block;
+  position: absolute;
+}
+
+#route_wrap {
+  width: 100%;
+  height: calc(100% - 90px);
+  margin: 20px auto 0 auto;
+  overflow: scroll;
+  overflow-x: hidden;
+  position: relative;
+  top: 0;
+  /* -ms-overflow-style: none;
+  scrollbar-width: none; */
+}
+
+.user_name {
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  /* font-size:3vw; */
+  font-size: 2vh;
+}
+
+.title {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  margin: 10px auto 0 auto;
+  /* font-size: 3vw; */
+  font-size: 2vh;
+}
+
+#place_title {
+  width: 90%;
+  height: 20px;
+  float: left;
+}
+
+#switch_btn {
+  width: 8%;
+  height: 8%;
+  float: right;
+  display: block;
+  /* margin-right: 2%; */
+}
+
+#switch_btn img {
+  cursor: pointer;
+}
+
+#start,
+#finish {
+  width: 90%;
+  height: 80px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.place_input {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  margin: 10px auto 0 auto;
+  padding: 0 10px 0 10px;
+  background-color: #ddd;
+  /* font-size: 3vw; */
+  font-size: 1.5vh;
+}
+
+.select_time {
+  border: none;
+  margin-top: 10px;
+  background-color: #ddd;
+  border-radius: 5px;
+  padding: 3px 5px;
+  /* font-size: 3vw; */
+  font-size: 1.5vh;
+}
+
+#place {
+  width: 90%;
+  position: relative;
+  margin-top: 30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+#place_list {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.place_1 {
+  width: 100%;
+  display: flex;
+  position: relative;
+  border-radius: 5px;
+  background-color: #ddd;
+  margin-top: 10px;
+  /* 추가 */
+  flex-wrap: wrap;
+}
+
+.num_box {
+  width: 10%;
+  text-align: center;
+  line-height: 40px;
+  /* font-size: 4vw; */
+  font-size: 2vh;
+  margin-top: 10px;
+}
+
+.address_box {
+  width: 90%;
+  cursor: pointer;
+  display: flex;
+  flex-flow: wrap;
+  margin-top: 10px;
+}
+
+.address_box p,
+.address_box span,
+.eta {
+  height: 20px;
+  line-height: 20px;
+}
+
+.address_box p {
+  font-weight: 900;
+  width: 100%;
+  display: block;
+  /* font-size: 3vw; */
+  font-size: 1.5vh;
+}
+
+.address_box span {
+  display: inline-flex;
+  width: 70%;
+  /* font-size: 2.5vw; */
+  font-size: 1.5vh;
+  margin-bottom: 10px;
+}
+
+.eta {
+  width: 30%;
+  display: block;
+  /* font-size: 2.5vw; */
+  font-size: 1.5vh;
+}
+
+.eta span {
+  display: inline;
+}
+
+.place_1:hover {
+  border: 1px solid #71d4b0;
+}
+
+.place_1:hover > .place_menu {
+  display: flex;
+}
+
+.place_menu {
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+  display: none;
+}
+
+.place_menu div {
+  width: 30%;
+  height: 20px;
+  line-height: 20px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  text-align: center;
+  /* font-size: 2vw; */
+  font-size: 1vh;
+}
+
+.place_menu div:hover {
+  background-color: #71d4b0;
+  color: #fff;
+}
+
+.place_menu div:nth-child(3):hover {
+  background-color: red;
+}
+
+#add_btn {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  margin-top: 10px;
+}
+
+#add_btn span {
+  width: 30px;
+  height: 30px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 100px;
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+#route_btn {
+  width: 30px;
+  height: 30px;
+  margin: 30px auto;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 100px;
+  color: #fff;
+  background-color: #71d4b0;
+  cursor: pointer;
+}
+
+.select_arrive {
+  border: none;
+  margin-top: 10px;
+  background-color: #ddd;
+  border-radius: 5px;
+  padding: 3px 5px;
+  /* font-size: 3vw; */
+  font-size: 1.5vh;
+}
