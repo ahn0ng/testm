@@ -2,14 +2,13 @@
 
 #list {
   width: 100%;
-  height: 90vh;
+  height: 100%;
   background-color: #eeeff1;
   z-index: 9996;
   position: relative;
   display: none;
   overflow-x: hidden;
   overflow: scroll;
-  top: 0;
 }
 
 .list_title {
