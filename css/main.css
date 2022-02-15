@@ -127,7 +127,7 @@ button {
   clear: both;
 }
 
-#warp {
+#wrap {
   width: 100%;
   overflow: hidden;
   position: relative;
