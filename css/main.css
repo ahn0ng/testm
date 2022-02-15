@@ -129,7 +129,6 @@ button {
 
 #warp {
   width: 100%;
-  /* height: 100%; */
   overflow: hidden;
   position: relative;
 }
@@ -146,7 +145,6 @@ nav {
   width: 100%;
   height: 10vh;
   bottom: 0;
-  /* position: relative; */
   position: fixed;
   background-color: #eeeff1;
   z-index: 9999;
@@ -160,7 +158,6 @@ nav ul {
 
 nav li {
   width: 20%;
-  /* height: 100%; */
   color: #2d2d2d;
   text-align: center;
   cursor: pointer;
@@ -175,7 +172,7 @@ nav li {
   background-size: contain;
   display: block;
   margin: 0 auto;
-  margin-top: 5%;
+  margin-top: 2vh;
 }
 
 #home_icon {
@@ -185,7 +182,7 @@ nav li {
   background-size: contain;
   display: block;
   margin: 0 auto;
-  margin-top: 5%;
+  margin-top: 2vh;
 }
 
 #menu_icon {
@@ -196,16 +193,15 @@ nav li {
   background-size: contain;
   display: block;
   margin: 0 auto;
-  margin-top: 5%;
+  margin-top: 2vh;
 }
 
 .nav_name {
-  /* height: 30px; */
-  height: 23%;
-  margin-top: 2%;
+  height: 10px;
   display: block;
   text-align: center;
-  font-size: 0.8em;
+  font-size: 1.5vh;
+  line-height: 10px;
 }
 
 #search_place {
@@ -220,7 +216,6 @@ nav li {
   padding-left: 20px;
   background: #fff;
   z-index: 1;
-  /* font-size: 1.5vh; */
   font-size: 0.7rem;
 }
 
@@ -243,6 +238,7 @@ nav li {
   /* 모바일 */
 }
 
+/* 폰트 크기 조절 */
 html {
   font-size: 62.5%;
 }

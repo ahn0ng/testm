@@ -5,30 +5,16 @@
   height: 100%;
   background-color: #eeeff1;
   z-index: 9996;
-  /* position: absolute; */
   position: relative;
   display: none;
   overflow-x: hidden;
   overflow: scroll;
 }
 
-/* #list_wrap {
-  width: 80%;
-  height: calc(100% - 60px);
-  height: 100%;
-  margin: 0 auto 30px auto;
-  position: relative;
-  overflow-x: hidden;
-  overflow: scroll;
-  top: 0;
-}  */
-
 .list_title {
   width: 90%;
   height: 20px;
   line-height: 20px;
-  /* font-size: 3vw; */
-  /* font-size: 2vh; */
   font-size: 0.8rem;
   margin: 5px auto 10px auto;
 }
@@ -105,6 +91,7 @@
   width: 100%;
   display: flex;
   border: 1px solid #2d2d2d;
+  border-radius: 5px;
   margin-bottom: 2%;
   cursor: pointer;
   flex-wrap: wrap;
@@ -118,8 +105,6 @@
   width: 100%;
   margin-top: 10px;
   margin-left: 10px;
-  /* font-size: 3vw; */
-  /* font-size: 1.5vh; */
   font-size: 0.7rem;
   margin-bottom: 5px;
   font-weight: 900;
@@ -136,8 +121,6 @@
   margin-left: 10px;
   margin-bottom: 10px;
   float: left;
-  /* font-size: 2vw; */
-  /* font-size: 1.5vh; */
   font-size: 0.7rem;
 
   /* 추가적인 요소 */
@@ -153,8 +136,6 @@
   margin-top: 5px;
   margin-right: 10px;
   color: #9b9b9b;
-  /* font-size: 2vw; */
-  /* font-size: 1.3vh; */
   font-size: 0.6rem;
 }
 
@@ -195,9 +176,8 @@
   background-color: #ddd;
   margin: 0 0 10px 1.75%;
   text-align: center;
-  /* font-size: 2vw; */
-  /* font-size: 1.3vh; */
   font-size: 0.6rem;
+  border-radius: 5px;
 }
 
 .bookmark_box {
@@ -218,6 +198,7 @@
   height: 30%;
   border: 1px solid #2d2d2d;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 .bookmark_content:hover {
@@ -225,12 +206,7 @@
 }
 
 .bookmark_content h4 {
-  margin-top: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 5px;
-  /* font-size: 3vw; */
-  /* font-size: 1.5vh; */
+  margin: 10px 10px 5px 10px;
   font-size: 0.7rem;
   font-weight: 900;
   border-radius: 0;
@@ -242,8 +218,6 @@
 }
 .bookmark_content p {
   margin: 5px 10px 10px 10px;
-  /* font-size: 2vw; */
-  /* font-size: 1.2vh; */
   font-size: 0.6rem;
   border-radius: 0;
 
@@ -286,7 +260,6 @@
   background-color: #ddd;
   margin: 0 0 10px 4%;
   text-align: center;
-  /* font-size: 2vw; */
-  /* font-size: 1.3vh; */
   font-size: 0.6rem;
+  border-radius: 5px;
 }
