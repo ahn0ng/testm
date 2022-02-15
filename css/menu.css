@@ -20,13 +20,13 @@
   font-size: 0.8rem;
 }
 
-#menu_menu {
+#menu_list {
   width: 100%;
   text-align: center;
   margin-top: 20px;
 }
 
-#menu_menu div {
+.menu_name > div {
   width: 80%;
   background-color: #ddd;
   margin: 4% auto 0 auto;
@@ -36,7 +36,7 @@
   font-size: 0.7rem;
 }
 
-#menu_menu div:hover {
+.menu_name > div:hover {
   background-color: #71d4b0;
   color: #eeeff1;
 }
@@ -67,6 +67,8 @@
 
 .menu_header {
   width: 100%;
+  height: 70px;
+  position: relative;
 }
 #back_btn {
   height: 20px;
@@ -258,5 +260,41 @@ input[id="available2"] {
 
 #login_pg2 {
   color: #71d4b0;
+  cursor: pointer;
+}
+
+/* 테스트 */
+
+#menuBtn4,
+#menuBtn5,
+#menuBtn6,
+#menuBtn7,
+#menuBtn8,
+#menuBtn9 {
+  display: none;
+}
+
+.menu_wrap {
+  width: 100%;
+  height: 100%;
+  background-color: #eeeff1;
+  position: absolute;
+  top: 0;
+  display: none;
+  overflow-x: hidden;
+}
+
+#menuBtn4:checked ~ #notice,
+#menuBtn5:checked ~ #user_info_edit,
+#menuBtn6:checked ~ #setting_place,
+#menuBtn7:checked ~ #excel,
+#menuBtn8:checked ~ #setting,
+#menuBtn9:checked ~ #service {
+  display: block;
+}
+
+.menu_back_btn {
+  float: right;
+  margin: 20px 20px 0 0;
   cursor: pointer;
 }

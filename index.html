@@ -21,7 +21,7 @@
     <div id="warp">
         <!-- 헤더(서치바) -->
         <header>
-            <input type="search" id="search_place" placeholder="Test_43" />
+            <input type="search" id="search_place" placeholder="Test_45" />
         </header>
 
         <div id="all_wrap">
@@ -324,13 +324,99 @@
                     <div id="user_info">
                         <h3>김기찬 기사님</h3>
                     </div>
-                    <div id="menu_menu">
-                        <div>공지사항</div>
-                        <div>개인 정보 수정</div>
-                        <div>출발지 / 도착지 설정</div>
-                        <div>엑셀로 경로 추가</div>
-                        <div>설정</div>
-                        <div>고객센터</div>
+                    <div id="menu_list">
+
+                        <!-- 공지사항 버튼 -->
+                        <input type="checkbox" id="menuBtn4" class="menuBtn">
+                        <label for="menuBtn4" class="menu_name" onclick=""><div>공지사항</div></label>
+
+                        <!-- 공지사항 -->
+                        <article id="notice" class="menu_wrap">
+                            <div class="menu_header">
+                                <span class="menu_back_btn">
+                                    <img src="https://img.icons8.com/material-rounded/24/000000/delete-sign.png"/>
+                                </span>
+                            </div>
+                            <!-- 내용물 -->
+                            <div>공지사항</div>
+                        </article>
+
+                        <!-- 개인정보수정 버튼 -->
+                        <input type="checkbox" id="menuBtn5" class="menuBtn">
+                        <label for="menuBtn5" class="menu_name" onclick=""><div>개인 정보 수정</div></label>
+        
+                        <!-- 개인정보수정 -->
+                        <article id="user_info_edit" class="menu_wrap">
+                            <div class="menu_header">
+                                <span class="menu_back_btn">
+                                    <img src="https://img.icons8.com/material-rounded/24/000000/delete-sign.png"/>
+                                </span>
+                            </div>
+                            <!-- 내용물 -->
+                            <div>개인 정보 수정</div>
+                        </article>
+
+                        <!-- 출발지도착지설정 버튼 -->
+                        <input type="checkbox" id="menuBtn6" class="menuBtn">
+                        <label for="menuBtn6" class="menu_name" onclick=""><div>출발지 / 도착지 설정</div></label>
+        
+                        <!-- 출발지도착지설정 -->
+                        <article id="setting_place" class="menu_wrap">
+                            <div class="menu_header">
+                                <span class="menu_back_btn">
+                                    <img src="https://img.icons8.com/material-rounded/24/000000/delete-sign.png"/>
+                                </span>
+                            </div>
+                            <!-- 내용물 -->
+                            <div>출발지 / 도착지 설정</div>
+                        </article>
+
+                        <!-- 엑셀로경로추가 버튼 -->
+                        <input type="checkbox" id="menuBtn7" class="menuBtn">
+                        <label for="menuBtn7" class="menu_name" onclick=""><div>엑셀로 경로 추가</div></label>
+        
+                        <!-- 엑셀로경로추가 -->
+                        <article id="excel" class="menu_wrap">
+                            <div class="menu_header">
+                                <span class="menu_back_btn">
+                                    <img src="https://img.icons8.com/material-rounded/24/000000/delete-sign.png"/>
+                                </span>
+                            </div>
+                            <!-- 내용물 -->
+                            <div>엑셀로 경로 추가</div>
+                        </article>
+
+                        <!-- 설정 버튼 -->
+                        <input type="checkbox" id="menuBtn8" class="menuBtn">
+                        <label for="menuBtn8" class="menu_name" onclick=""><div>설정</div></label>
+        
+                        <!-- 설정 -->
+                        <article id="setting" class="menu_wrap">
+                            <div class="menu_header">
+                                <span class="menu_back_btn">
+                                    <img src="https://img.icons8.com/material-rounded/24/000000/delete-sign.png"/>
+                                </span>
+                            </div>
+                            <!-- 내용물 -->
+                            <div>설정</div>
+                        </article>
+
+                        <!-- 고객센터 버튼 -->
+                        <input type="checkbox" id="menuBtn9" class="menuBtn">
+                        <label for="menuBtn9" class="menu_name" onclick=""><div>고객센터</div></label>
+        
+                        <!-- 고객센터 -->
+                        <article id="service" class="menu_wrap">
+                            <div class="menu_header">
+                                <span class="menu_back_btn">
+                                    <img src="https://img.icons8.com/material-rounded/24/000000/delete-sign.png"/>
+                                </span>
+                            </div>
+                            <!-- 내용물 -->
+                            <div>
+                                고객센터
+                            </div>
+                        </article>
                     </div>
                     <div id="menu_end">
                         <div id="loginout_btn">로그아웃</div>
@@ -418,11 +504,6 @@
                 </div>
             </section>
 
-
-            <!-- 엑셀 -->
-            <scetion>
-                
-            </scetion>
         </div>
 
 
@@ -434,7 +515,6 @@
                     <span class="nav_name">리스트</span>
                 </li>
                 <li id="home_btn">
-    
                     <span id="home_icon"></span>
                     <span class="nav_name">홈</span>
         

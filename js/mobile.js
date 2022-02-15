@@ -83,6 +83,7 @@ $(function() {
             k=k*0;
             l=l*0;
             $("#password").hide();
+            $('.menuBtn').prop('checked',false);
         }
     });
     $("#list_btn").click(function(){
@@ -105,6 +106,8 @@ $(function() {
             k=k*0;
             l=l*0;
             $("#password").hide();
+            $('.menuBtn').prop('checked',false);
+
     
             
         }else{
@@ -129,7 +132,7 @@ $(function() {
         j=j*0;
         k=k*0;
         l=l*0;
-
+        $('.menuBtn').prop('checked',false);
         $("#menu").hide();
         $("#list").hide();
         $("#menu_icon").css('background','url("https://img.icons8.com/fluency-systems-filled/48/000000/menu.png") no-repeat center').css('background-size','contain');
@@ -229,6 +232,12 @@ $(function() {
         $("#password").hide();
         $("#login").show();
     });
+
+
+    $(".menu_back_btn").click(function(){
+        $('.menuBtn').prop('checked',false);
+    });
+
 
 });
 
