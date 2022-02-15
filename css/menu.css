@@ -29,7 +29,8 @@
   line-height: 30px;
   margin-top: 8%;
   /* font-size: 3vw; */
-  font-size: 2vh;
+  /* font-size: 2vh; */
+  font-size: 0.8rem;
 }
 
 #menu_menu {
@@ -46,7 +47,8 @@
   border-radius: 5px;
   line-height: 30px;
   cursor: pointer;
-  font-size: 1.5vh;
+  /* font-size: 1.5vh; */
+  font-size: 0.7rem;
 }
 
 #menu_menu div:hover {
@@ -68,7 +70,8 @@
   line-height: 30px;
   border: 1px solid #71d4b0;
   border-radius: 5px;
-  font-size: 1.5vh;
+  /* font-size: 1.5vh; */
+  font-size: 0.7rem;
 }
 
 #menu_end div:hover {
@@ -103,8 +106,6 @@
 
 * {
   box-sizing: border-box;
-  font-family: "NanumSquare", sans-serif;
-  border-radius: 5px;
 }
 
 .login-form {
@@ -133,16 +134,19 @@
 
 .text-field {
   /* font-size: 3vw; */
-  font-size: 1.5vh;
+  /* font-size: 1.5vh; */
+  font-size: 0.7rem;
   padding: 10px;
   border: none;
   width: 260px;
   margin-bottom: 10px;
+  border-radius: 5px;
 }
 
 .submit-btn {
   /* font-size: 4vw; */
-  font-size: 2vh;
+  /* font-size: 2vh; */
+  font-size: 0.8rem;
   border: none;
   padding: 10px;
   width: 100%;
@@ -150,6 +154,7 @@
   margin-bottom: 30px;
   color: white;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 .links {
@@ -160,7 +165,8 @@
 .links div {
   display: inline;
   /* font-size: 3vw; */
-  font-size: 1.5vh;
+  /* font-size: 1.5vh; */
+  font-size: 0.7rem;
   color: #9b9b9b;
   margin-left: 20px;
   cursor: pointer;
@@ -196,7 +202,8 @@
 
 .submit-btn2 {
   /* font-size: 4vw; */
-  font-size: 2vh;
+  /* font-size: 2vh; */
+  font-size: 0.8rem;
   border: none;
   padding: 10px;
   width: 100%;
@@ -205,6 +212,7 @@
   color: white;
   margin-top: 15px;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 /* 체크박스 */
@@ -213,6 +221,7 @@
   width: 100%;
   margin: 0 auto;
   text-align: left;
+  font-size: 0.7rem;
 }
 
 #agree p {
@@ -234,7 +243,7 @@ input[id="available2"] {
   display: none;
 }
 .checkbox_register {
-  height: 15px;
+  height: 1rem;
   display: inline-block;
   background: url("https://img.icons8.com/ios/50/2d2d2d/unchecked-checkbox.png")
     no-repeat;
@@ -246,6 +255,10 @@ input[id="available2"] {
   background: url("https://img.icons8.com/ios/50/71d4b0/checked-checkbox--v1.png")
     no-repeat;
   background-size: contain;
+}
+
+.login-form span {
+  font-size: 0.8rem;
 }
 
 /* 비밀번호 찾기 */
@@ -270,7 +283,8 @@ input[id="available2"] {
 
 .submit-btn3 {
   /* font-size: 4vw; */
-  font-size: 2vh;
+  /* font-size: 2vh; */
+  font-size: 0.8rem;
   border: none;
   padding: 10px;
   width: 100%;
@@ -278,6 +292,7 @@ input[id="available2"] {
   margin-bottom: 30px;
   color: white;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 #login_pg2 {
