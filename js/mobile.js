@@ -11,6 +11,7 @@ function resize_home(){
     // route_position = screen_height-90;
     route_position = (screen_height*0.9)-35;
     
+    // var drag_bar_height = nav_height/2;
 
     $("#wrap").css("height",screen_height)
     $("#route").css("top",route_position);
@@ -19,7 +20,8 @@ function resize_home(){
     $("#menu").css("height",menu_height);
     $(".menu_wrap").css("height",menu_height);
     $("nav").css("height",nav_height);
-
+    
+    // $(".drag_bar").css("height",drag_bar_height);
 
 }
 
