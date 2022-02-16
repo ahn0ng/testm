@@ -9,9 +9,12 @@ function resize_home(){
     var menu_height = screen_height*0.90;
     var nav_height = screen_height*0.1;
     // route_position = screen_height-90;
-    route_position = (screen_height*0.9)-35;
+
+    var drag_bar_height = nav_height/2;
+
+    route_position = (screen_height*0.9)-drag_bar_height;
     
-    // var drag_bar_height = nav_height/2;
+   
 
     $("#wrap").css("height",screen_height)
     $("#route").css("top",route_position);
@@ -21,7 +24,7 @@ function resize_home(){
     $(".menu_wrap").css("height",menu_height);
     $("nav").css("height",nav_height);
     
-    // $(".drag_bar").css("height",drag_bar_height);
+    $(".drag_bar").css("height",drag_bar_height);
 
 }
 
