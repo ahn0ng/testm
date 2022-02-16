@@ -7,6 +7,7 @@ function resize_home(){
     screen_height =$(window).height();
     var route_height = screen_height*0.85;
     var menu_height = screen_height*0.90;
+    var nav_height = screen_height*0.1;
     // route_position = screen_height-90;
     route_position = (screen_height*0.9)-35;
     
@@ -17,6 +18,8 @@ function resize_home(){
     $("#list").css("height",menu_height);
     $("#menu").css("height",menu_height);
     $(".menu_wrap").css("height",menu_height);
+    $("nav").css("height",nav_height);
+
 
 }
 
