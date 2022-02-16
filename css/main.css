@@ -202,6 +202,7 @@ nav li {
   display: block;
   text-align: center;
   font-size: 1.5vh;
+  margin-top: 0.15vh;
   line-height: 10px;
 }
 

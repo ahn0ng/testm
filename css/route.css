@@ -164,13 +164,13 @@
 
 .address_box span {
   display: inline-flex;
-  width: 70%;
+  width: 80%;
   font-size: 0.8rem;
   margin-bottom: 10px;
 }
 
 .eta {
-  width: 30%;
+  width: 20%;
   display: block;
   font-size: 0.8rem;
 }
